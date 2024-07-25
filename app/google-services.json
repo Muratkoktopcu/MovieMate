@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "620710603048",
+    "project_id": "moviemate-c6e9d",
+    "storage_bucket": "moviemate-c6e9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620710603048:android:de3dabd2c10ab3a334c81d",
+        "android_client_info": {
+          "package_name": "com.murat.moviemate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620710603048-6347j3m3pieebdh603ds18qim8agllga.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.murat.moviemate",
+            "certificate_hash": "66df7048b132fc363a9854375cfa04646f4339b1"
+          }
+        },
+        {
+          "client_id": "620710603048-ai8v3cmq47m78906p2d7mbttdqu5d1tc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAaYWQu6MTHmO4oUZqzT06HkP8OH406Pk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620710603048-ai8v3cmq47m78906p2d7mbttdqu5d1tc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
