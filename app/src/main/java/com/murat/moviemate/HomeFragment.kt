@@ -13,6 +13,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.tasks.Task
 import android.app.Activity
 import android.content.Intent
+import androidx.navigation.fragment.findNavController
 
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -86,6 +87,8 @@ class HomeFragment : Fragment() {
                     // Sign in success, update UI with the signed-in user's information
                     val user = FirebaseAuth.getInstance().currentUser
                     // Proceed with your logic here, e.g., navigate to main screen
+                    //moviesFragment a gecis
+                    findNavController().navigate(R.id.action_homeFragment_to_moviesFragment)
                 } else {
                     // If sign in fails, display a message to the user.
                     Log.w(TAG, "signInWithCredential:failure", task.exception)

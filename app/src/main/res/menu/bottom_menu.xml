@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/navigation_fav"
+        android:icon="@drawable/baseline_favorite_24"
+        android:title="Favorites" />
+    <item
+        android:id="@+id/navigation_watch"
+        android:icon="@drawable/baseline_playlist_add_circle_24"
+        android:title="Watch List" />
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/baseline_person_24"
+        android:title="Profile" />
+
+</menu>

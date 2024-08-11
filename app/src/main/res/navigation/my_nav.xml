@@ -19,6 +19,11 @@
             app:destination="@id/homeFragment"
             app:popUpTo="@id/splashFragment"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_moviesFragment"
+            app:destination="@id/moviesFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/viewPagerFragment"
@@ -35,5 +40,88 @@
         android:id="@+id/homeFragment"
         android:name="com.murat.moviemate.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_moviesFragment"
+            app:destination="@id/moviesFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/moviesFragment"
+        android:name="com.murat.moviemate.MoviesFragment"
+        android:label="fragment_movies"
+        tools:layout="@layout/fragment_movies" >
+        <action
+            android:id="@+id/action_moviesFragment_to_favoritesScreen"
+            app:destination="@id/favoritesScreen" />
+        <action
+            android:id="@+id/action_moviesFragment_to_watchlistScreen"
+            app:destination="@id/watchlistScreen" />
+        <action
+            android:id="@+id/action_moviesFragment_to_profileScreen"
+            app:destination="@id/profileScreen" />
+        <action
+            android:id="@+id/action_moviesFragment_to_detailsScreen"
+            app:destination="@id/detailsScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesScreen"
+        android:name="com.murat.moviemate.FavoritesScreen"
+        android:label="fragment_favorites_screen"
+        tools:layout="@layout/fragment_favorites_screen" >
+        <action
+            android:id="@+id/action_favoritesScreen_to_moviesFragment"
+            app:destination="@id/moviesFragment" />
+        <action
+            android:id="@+id/action_favoritesScreen_to_watchlistScreen"
+            app:destination="@id/watchlistScreen" />
+        <action
+            android:id="@+id/action_favoritesScreen_to_profileScreen"
+            app:destination="@id/profileScreen" />
+        <action
+            android:id="@+id/action_favoritesScreen_to_detailsScreen"
+            app:destination="@id/detailsScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/watchlistScreen"
+        android:name="com.murat.moviemate.WatchlistScreen"
+        android:label="fragment_watchlist_screen"
+        tools:layout="@layout/fragment_watchlist_screen" >
+        <action
+            android:id="@+id/action_watchlistScreen_to_moviesFragment"
+            app:destination="@id/moviesFragment" />
+        <action
+            android:id="@+id/action_watchlistScreen_to_detailsScreen"
+            app:destination="@id/detailsScreen" />
+        <action
+            android:id="@+id/action_watchlistScreen_to_profileScreen"
+            app:destination="@id/profileScreen" />
+        <action
+            android:id="@+id/action_watchlistScreen_to_favoritesScreen"
+            app:destination="@id/favoritesScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileScreen"
+        android:name="com.murat.moviemate.ProfileScreen"
+        android:label="fragment_profile_screen"
+        tools:layout="@layout/fragment_profile_screen" >
+        <action
+            android:id="@+id/action_profileScreen_to_moviesFragment"
+            app:destination="@id/moviesFragment" />
+        <action
+            android:id="@+id/action_profileScreen_to_watchlistScreen"
+            app:destination="@id/watchlistScreen" />
+        <action
+            android:id="@+id/action_profileScreen_to_favoritesScreen"
+            app:destination="@id/favoritesScreen" />
+        <action
+            android:id="@+id/action_profileScreen_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsScreen"
+        android:name="com.murat.moviemate.DetailsScreen"
+        android:label="fragment_details_screen"
+        tools:layout="@layout/fragment_details_screen" />
 </navigation>

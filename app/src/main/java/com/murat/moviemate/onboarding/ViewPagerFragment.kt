@@ -32,7 +32,7 @@ class ViewPagerFragment : Fragment() {
             requireActivity().supportFragmentManager,
             lifecycle
         )
-        view.findViewById<ViewPager2>(R.id.viewPager).adapter=adapter // bu kısmı sor
+        view.findViewById<ViewPager2>(R.id.viewPager).adapter=adapter
 
         return view
     }

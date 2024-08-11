@@ -4,4 +4,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#459DE4</color>
     <color name="red">#FF0000</color>
+    <color name="background">#5E5F60</color>
+    <color name="find">#CFDADC</color>
+    <color name="filmback">#90AAAE</color>
+    <color name="filmback2">#CFDADC</color>
+    <color name="yellow">#FFEB3B</color>
 </resources>
